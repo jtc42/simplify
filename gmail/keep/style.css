@@ -1,0 +1,46 @@
+/* Hide logo */
+html.simpl .gb_ja:not(.gb_ka) .gb_qc .gb_Rb {
+    display: none;
+    width: 0;
+}
+
+/* Remove menu button padding */
+html.simpl .gb_qc.gb_la {
+    padding-right: 0px;
+}
+
+/* Allow logo container to collapse to zero width */
+html.simpl div.gb_lc.gb_qc.gb_la.gb_sc {
+    min-width: 0 !important;
+}
+
+/* Increase search bar margin */
+html.simpl .gb_wd.gb_Fd .gb_td .gb_ne {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Remove restriction on search bar width */
+html.simpl .gb_ne {
+    max-width: none;
+}
+
+/* ??? */
+html.simpl .gb_ja.gb_9b .gb_lc.gb_vd:not(.gb_sd) .gb_td.gb_la, .gb_ja.gb_9b .gb_lc.gb_ud.gb_rd:not(.gb_sd) .gb_td.gb_la, .gb_ja.gb_md .gb_lc:not(.gb_vd):not(.gb_sd) .gb_td.gb_la {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* Shrink height of menu items */
+html.simpl .gb_ec .gb_jc {
+    height: 20px;
+    margin-top: 5px;
+}
+
+html.simpl .gb_ec .gb_ic, .gb_fc {
+    line-height: 30px;
+}
+
+html.simpl .gb_ec, .gb_fc {
+    min-height: 20px;
+}

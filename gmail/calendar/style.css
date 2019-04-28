@@ -1,0 +1,22 @@
+/* Hide logo */
+html.simpl .gb_Rb {
+    display: none !important;
+    width: 0;
+}
+
+/* Allow logo container to collapse to zero width */
+html.simpl div.gb_lc.gb_qc.gb_la.gb_sc {
+    padding-right: 0;
+    min-width: 0  !important;
+}
+
+/* Hide App Switcher */
+html.simpl div.gb_w.gb_Fc.gb_f.gb_hf {
+    display: none !important;
+}
+
+/* Pad out left of profile photo */
+html.simpl .gb_ja.gb_9b.gb_la .gb_mc {
+    padding-left: 5px;
+}
+

@@ -1,8 +1,7 @@
 {
-	"name": "Simplify Gmail",
+	"name": "Simplify Google",
 	"version": "1.2.5",
-	"description": "Simplifies Gmail interface to the bare minimum",
-	"homepage_url": "https://simpl.fyi/gmail",
+	"description": "Simplifies some Google interfaces",
 	"icons": {
 		"16": "img/icon16.png",
 		"24": "img/icon24.png",
@@ -11,13 +10,29 @@
 		"128": "img/icon128.png"
 	},
 
-	"content_scripts": [{
-      	"matches": ["*://mail.google.com/mail/*"],
-      	"js": ["script.js"],
-		"css": ["style.css"],
-		"run_at": "document_start",
-		"all_frames": false
-	}],
+	"content_scripts": [
+		{
+			"matches": ["*://mail.google.com/mail/*"],
+			"js": ["./gmail/script.js"],
+			"css": ["./gmail/style.css"],
+			"run_at": "document_start",
+			"all_frames": false
+		},
+		{
+			"matches": ["*://calendar.google.com/calendar/*"],
+			"js": ["./calendar/script.js"],
+			"css": ["./calendar/style.css"],
+			"run_at": "document_start",
+			"all_frames": false
+		},
+		{
+			"matches": ["*://keep.google.com/*"],
+			"js": ["./keep/script.js"],
+			"css": ["./keep/style.css"],
+			"run_at": "document_start",
+			"all_frames": false
+		}
+	],
 
 	"manifest_version": 2,
 	"content_security_policy": "default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self'"
