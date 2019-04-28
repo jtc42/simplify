@@ -4,6 +4,16 @@ html.simpl .gb_ja:not(.gb_ka) .gb_qc .gb_Rb {
     width: 0;
 }
 
+/* Hide app switcher */
+html.simpl .gb_Hd {
+    display: none;
+}
+
+/* Remove padding to left of user picture */
+html.simpl .gb_ja.gb_9b.gb_la .gb_mc {
+    padding-left: 0;
+}
+
 /* Remove menu button padding */
 html.simpl .gb_qc.gb_la {
     padding-right: 0px;
