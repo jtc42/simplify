@@ -124,7 +124,7 @@ html.simpl .aeH {
 	position: absolute !important;
 	top: 0px !important;
 	left: 60px !important;
-	width: calc(65% - 92px);
+	width: calc(65% - 138px);
 
 	/* Reduce z-index from 986 so action bar can live on top of it */
 	z-index: 6; 
@@ -845,7 +845,7 @@ html.simpl .bq9 {
 
 /* Shrink the action bar when the AddOnsPane AND Search are open */
 html.simpl.addOnsPane:not(.hideSearch) .aeH {
-    width: calc(65% - 92px) !important;
+    width: calc(65% - 138px) !important;
 }
 html.simpl.addOnsPane.splitView:not(.hideSearch) .G-atb[gh="tm"] {
     width: calc(65% - 300px) !important;
